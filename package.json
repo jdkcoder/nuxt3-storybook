@@ -10,8 +10,6 @@
     "postinstall": "nuxt prepare",
     "sb": "storybook dev --port 6006",
     "build:sb": "storybook build",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "nuxt": "latest",
