@@ -1,0 +1,26 @@
+<style>
+    div[data-nodetype="story"]>a>svg {
+        display: none
+    }
+
+    div[data-nodetype="story"]>a::before {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        aspect-ratio: 1 / 1;
+        background-size: cover;
+        margin-right: .25rem;
+    }
+
+    div[data-nodetype="story"][data-selected="false"]>a::before {
+        background-image: url('.storybook/custom-theme/assets/svgs/component.svg');
+    }
+
+    div[data-nodetype="story"][data-selected="true"]>a::before {
+        background-image: url('.storybook/custom-theme/assets/svgs/component-selected.svg');
+    }
+
+    #storybook-preview-iframe {
+        background-color: transparent !important;
+    }
+</style>
